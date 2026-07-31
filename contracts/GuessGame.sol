@@ -40,6 +40,7 @@ contract GuessGame is Ownable, ReentrancyGuard {
         require(msg.value == entryFee, "Incorrect entry fee");
         require(guess >= 1 && guess <= range, "Guess out of range");
 
+
         uint256 result = _random();
         bool won = (result == guess);
         uint256 payout = 0;
