@@ -32,7 +32,6 @@ contract GuessGame is Ownable, ReentrancyGuard {
     );
     event Funded(address indexed from, uint256 amount);
     event ParamsUpdated(uint256 entryFee, uint256 range, uint256 payoutMultiplier);
-
     constructor(address initialOwner) Ownable(initialOwner) {}
 
     /// @notice Play the game by guessing a number between 1 and `range`.
