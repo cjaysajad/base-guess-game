@@ -6,7 +6,6 @@ A simple, fully on-chain number-guessing game for deployment on [Base](https://b
 - A player pays an entry fee (`entryFee`) and guesses a number between 1 and `range`.
 - The contract generates a random number. If it matches the player's guess, they win `entryFee * payoutMultiplier`.
 - Otherwise, the entry fee stays in the contract's prize pool.
-
 ## ⚠️ Important security note
 Randomness in this version comes from block data (`block.prevrandao`, `timestamp`, ...). This is:
 - Fine for a demo, testing, or a low-stakes game.
