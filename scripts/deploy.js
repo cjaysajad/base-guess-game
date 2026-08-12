@@ -1,5 +1,4 @@
 const hre = require("hardhat");
-
 async function main() {
   const [deployer] = await hre.ethers.getSigners();
   console.log("Deploying with account:", deployer.address);
